@@ -41,7 +41,7 @@
   "compileType": "miniprogram",
   "libVersion": "2.19.4",
   "appid": "wxaa25a21c88c9845c",
-  "projectname": "mgrep",
+  "projectname": "MGrepWX",
   "debugOptions": {
     "hidedInDevtools": []
   },
