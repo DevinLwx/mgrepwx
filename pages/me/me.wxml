@@ -1,0 +1,4 @@
+<!--me.wxml-->
+<view class="container me">
+  <button type="default" bindtap="login">自动化报告-登录</button>
+</view>

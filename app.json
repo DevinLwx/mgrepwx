@@ -2,18 +2,20 @@
   "pages":[
     "pages/index/index",
     "pages/logs/logs",
-    "pages/tests/tests"
+    "pages/tests/tests",
+    "pages/me/me",
+    "pages/login/login"
   ],
   "tabBar": {
     "list": [{
       "pagePath": "pages/index/index",
       "text": "首页"
     }, {
-      "pagePath": "pages/logs/logs",
-      "text": "日志"
-    }, {
       "pagePath": "pages/tests/tests",
       "text": "测试"
+    }, {
+      "pagePath": "pages/me/me",
+      "text": "我的"
     }]
   },
   "networkTimeout": {
@@ -27,6 +29,5 @@
     "navigationBarTextStyle":"black"
   },
   "style": "v2",
-  "sitemapLocation": "sitemap.json",
-  "debug": true
+  "sitemapLocation": "sitemap.json"
 }

@@ -4,12 +4,13 @@ const app = getApp()
 
 Page({
   data: {
-    motto: '搬砖工',
+    motto: '搬砖工的日志',
     userInfo: {},
     hasUserInfo: false,
     canIUse: wx.canIUse('button.open-type.getUserInfo'),
     canIUseGetUserProfile: false,
-    canIUseOpenData: wx.canIUse('open-data.type.userAvatarUrl') && wx.canIUse('open-data.type.userNickName') // 如需尝试获取用户信息可改为false
+    // canIUseOpenData: wx.canIUse('open-data.type.userAvatarUrl') && wx.canIUse('open-data.type.userNickName'), // 如需尝试获取用户信息可改为false
+    canIUseOpenData: false
   },
   // 事件处理函数
   bindViewTap() {
@@ -25,16 +26,16 @@ Page({
     }
   },
   onShow() {
-    console.log('开始动画')
-    this.animate('#user', [
-      { opacity: 1.0, rotate: 0, backgroundColor: '#FF0000' },
-      { opacity: 0.5, rotate: 45, backgroundColor: '#00FF00'},
-      { opacity: 0.0, rotate: 90, backgroundColor: '#FF0000' },
-      ], 5000, function () {
-        this.clearAnimation('#user', function () {
-          console.log("清除了#container上的opacity和rotate属性")
-        })
-    }.bind(this))
+    // console.log('开始动画')
+    // this.animate('#user', [
+    //   { opacity: 1.0, rotate: 0, backgroundColor: '#FF0000' },
+    //   { opacity: 0.5, rotate: 45, backgroundColor: '#00FF00'},
+    //   { opacity: 0.0, rotate: 90, backgroundColor: '#FF0000' },
+    //   ], 5000, function () {
+    //     this.clearAnimation('#user', function () {
+    //       console.log("清除了#container上的opacity和rotate属性")
+    //     })
+    // }.bind(this))
   },
   getUserProfile(e) {
     // 推荐使用wx.getUserProfile获取用户信息，开发者每次通过该接口获取用户个人信息均需用户确认，开发者妥善保管用户快速填写的头像昵称，避免重复弹窗
