@@ -1,4 +1,6 @@
 {
   "navigationBarTitleText": "迈景基因-登录",
-  "usingComponents": {}
+  "usingComponents": {
+    "mp-dialog": "../../miniprogram_npm/weui-miniprogram/dialog/dialog"
+  }
 }
